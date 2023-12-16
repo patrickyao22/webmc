@@ -23,8 +23,8 @@ class SelectWorldPage extends Page {
             .reduce((str, [storageId, world]) => str + `
                 <li>
                     <span class="world-name">${world.name}</span>
-                    <span class="create-at">Created - ${timestamp2str(world.createAt)}</span>
-                    <span class="modify-at">Modified - ${timestamp2str(world.modifyAt)}</span>
+                    <span class="create-at">创建 - ${timestamp2str(world.createAt)}</span>
+                    <span class="modify-at">更改 - ${timestamp2str(world.modifyAt)}</span>
                     <span class="world-mode">${world.type}</span>
                     <span class="storageId">${storageId}</span>
                 </li>
