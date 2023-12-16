@@ -12,9 +12,9 @@ class CreateNewWorldPage extends Page {
         this.worldSeed = this.shadowRoot.getElementById("world-seed");
 
         this.typeBtn.addEventListener("click", () => {
-            if (this.typeEcho.innerHTML == "Normal")
-                this.typeEcho.innerHTML = "Flat";
-            else this.typeEcho.innerHTML = "Normal";
+            if (this.typeEcho.innerHTML == "普通")
+                this.typeEcho.innerHTML = 超平坦";
+            else this.typeEcho.innerHTML = 普通";
         });
 
         this.createBtn.addEventListener("click", () => {
