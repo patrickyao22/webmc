@@ -10,10 +10,10 @@ class LoadTerrainPage extends Page {
     static get outdegree() { return ["play", ]; };
     async onTransitionedToThis(from, eventName, fromPage, ...data) {
         let p = this.shadowRoot.getElementById("gen-out");
-        p.innerHTML = "Generating terrain...";
+        p.innerHTML = "加载地形中";
         await sleep(70);
         let world = new World({ ...(data[0] || {}) });
-        p.innerHTML = "Ready to render...";
+        p.innerHTML = "准备渲染";
         await sleep(70);
         let canvas = pm.getPageByID("play").mainCanvas;
         let renderer = new WorldRenderer(canvas, world);
