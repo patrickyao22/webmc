@@ -37,7 +37,7 @@
         [0, 0, 1], [0, 0, 0], [1, 0, 0], [1, 0, 1]
     ]
 },
-"blocks":{"Air?": {"id": 0, "capacity": 0},
+"blocks":{"Air": {"id": 0, "capacity": 0},
 
 "Moss Stone": {"id": 1, "blastResistance": 30, "texture": [1,28]},
 
