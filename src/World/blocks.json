@@ -38,7 +38,7 @@
     ]
 },
 "blocks":{
-    "空气":{"id":0,"opacity":0},
+    "air?":{"id":0,"opacity":0},
     "苔石":{"id":1,"blastResistance":30,"texture":[[1,28]]},
     "石砖":{"id":1,"blastResistance":30,"texture":[[1,29]]},
     "黑曜石":{"id":1,"blastResistance":30,"texture":[[2,2]]},
