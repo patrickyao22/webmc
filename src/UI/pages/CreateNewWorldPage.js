@@ -14,7 +14,7 @@ class CreateNewWorldPage extends Page {
         this.typeBtn.addEventListener("click", () => {
             if (this.typeEcho.innerHTML == "普通")
                 this.typeEcho.innerHTML = "超平坦";
-            else this.typeEcho.innerHTML = 普通";
+            else this.typeEcho.innerHTML = "普通";
         });
 
         this.createBtn.addEventListener("click", () => {
