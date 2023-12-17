@@ -142,8 +142,8 @@ class World extends EventDispatcher {
         switch(this.type) {
         case "flat":
             let block = Block.getBlockByBlockName(chunkY >= 0? "air":
-                chunkX%2? chunkZ%2? "grass": "stone"
-                : chunkZ%2? "stone": "grass");
+                chunkX%2? chunkZ%2? "Grass Cube": "Stone brick"
+                : chunkZ%2? "Stone brick": "Grass Cube");
             for (let i = 0; i < tileMap.length; ++i)
                 tileMap[i] = block.longID;
             break;
@@ -154,11 +154,11 @@ class World extends EventDispatcher {
                 stone = Block.getBlockByBlockName(
                     chunkY%2
                     ? chunkX%2
-                        ? chunkZ%2? "grass": "stone"
-                        : chunkZ%2? "stone": "grass"
+                        ? chunkZ%2? "Grass Cube": "Stone brick"
+                        : chunkZ%2? "Stone brick": "Grass Cube"
                     : chunkX%2
-                        ? chunkZ%2? "stone": "grass"
-                        : chunkZ%2? "grass": "stone"
+                        ? chunkZ%2? "Stone brick": "Grass Cube"
+                        : chunkZ%2? "Grass Cube": "Stone brick"
                 );
             let fn3 = noise.gen3d.bind(noise);
             let elevations = [];
@@ -176,7 +176,7 @@ class World extends EventDispatcher {
                         let n33 = (fn3(i/256,j/256,k/256) +fn3(i/128,j/128,k/128)/2 + fn3(i/64, j/64, k/64) / 4+fn3(i/25,j/25,k/25)/8);
                         let vein = (fn3(i / 5, j / 5, k / 5) + 1) / 2;
                         tileMap[Chunk.getLinearBlockIndex(x, y, z)] =
-                            (vein < 0.18? air: n33 > 0 && n3 < -0.1? air: stone).longID;
+                            (vein < 0.18? air: n33 > 0 && n3 < -0.1? air: 石头).longID;
                     }
                     else {
                         elevations.haveSurface = elevations.haveSurface || j === elevation;
@@ -235,12 +235,12 @@ class World extends EventDispatcher {
                 let j = chunkY * Y_SIZE + y;
                 let flowerPlacement = treeNoise[x][z] < 0.15;
                 if (treePlacement[x][z] && j - elevation < 5 && elevations.haveSurface)
-                    tileMap[Chunk.getLinearBlockIndex(x, y, z)] = Block.getBlockByBlockName("oak_log").longID;
+                    tileMap[Chunk.getLinearBlockIndex(x, y, z)] = Block.getBlockByBlockName("Oak logs").longID;
                 else if (j - elevation < 7 && j - elevation > 3 && haveTreeAround[x][z] !== false)
-                    tileMap[Chunk.getLinearBlockIndex(x, y, z)] = Block.getBlockByBlockName("oak_leaves").longID;
+                    tileMap[Chunk.getLinearBlockIndex(x, y, z)] = Block.getBlockByBlockName("Oak leaves").longID;
                 else if (flowerPlacement && j <= elevation && y > 0 && elevations.haveSurface
                 && Block.getBlockByBlockLongID(tileMap[Chunk.getLinearBlockIndex(x, y - 1, z)]).name !== "air")
-                    tileMap[Chunk.getLinearBlockIndex(x, y, z)] = Block.getBlockByBlockName("dandelion").longID;
+                    tileMap[Chunk.getLinearBlockIndex(x, y, z)] = Block.getBlockByBlockName("Fluorite").longID;
             }
             break;}
         }

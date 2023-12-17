@@ -37,49 +37,34 @@
         [0, 0, 1], [0, 0, 0], [1, 0, 0], [1, 0, 1]
     ]
 },
-"blocks":{"air": {"id": 0, "capacity": 0},
-
-"Moss Stone": {"id": 1, "blastResistance": 30, "texture": [1,28]},
-
-"Stone brick": {"id": 1, "blastResistance": 30, "texture": [1,29]},
-
+"blocks":{
+"air": {"id": 0, "capacity": 0},
+"Moss Stone": {"id": 1, "blastResistance": 30, "texture": [[1,28]]},
+"Stone brick": {"id": 1, "blastResistance": 30, "texture": [[1,29]]},
 "Obsidian": {"id": 1, "blastResistance": 30, "texture": [[2,2]]},
-
 "Smooth Stone": {"id": 1, "blastResistance": 30, "texture": [[2,21]]},
-
 "TNT": {"id": 1, "blastResistance": 15, "texture": [[2,24], [2,25], [2,26]]},
-
 "Iron block": {"id": 1, "blastResistance": 15, "texture": [[4,9]]},
-
 "Gold nugget": {"id": 1, "blastResistance": 15, "texture": [[4,10]]}, 
-
 "Diamond block": {"id": 1, "blastResistance": 15, "texture": [[4,11]]},
-
 "Qingjin Stone Block": {"id": 1, "blastResistance": 15, "texture": [[4,13]]},
-
-"Emerald block": {"id": 1, "blastResistance": 15, "texture": [4.14]},
-
+"Emerald block": {"id": 1, "blastResistance": 15, "texture": [[4.14]]},
 "Red Stone Block": {"id": 1, "blastResistance": 15, "texture": [[4,15]]},
-
-"Torch": {"id": 2, "blastResistance": 3, "texture": [6,19]},
-
-"Stone": {"id": 1, "blastResistance": 30, "texture": [1,20]},
-
-"Granite": {"id": 1, "bd": 1, "blastResistance": 30, "texture": [1,21]},
-
-"Polished granite": {"id": 1, "bd": 2, "blastResistance": 30, "texture": [1,22]},
-
+"Torch": {"id": 2, "blastResistance": 3, "texture": [[6,19]]},
+"Stone": {"id": 1, "blastResistance": 30, "texture": [[1,20]]},
+"Granite": {"id": 1, "bd": 1, "blastResistance": 30, "texture": [[1,21]]},
+"Polished granite": {"id": 1, "bd": 2, "blastResistance": 30, "texture": [[1,22]]},
 "Diorite":     {"id":1,"bd":3,"blastResistance":30,"texture":[[1,23]]},
-"Polished diorite": {"id": 1, "bd": 4, "blastResistance": 30, "texture": [1,24]},
-"Andean Rock": {"id": 1, "bd": 5, "blastResistance": 30, "texture": [1,25]},
-"Polished andesite": {"id": 1, "bd": 6, "blastResistance": 30, "texture": [1,26]},
+"Polished diorite": {"id": 1, "bd": 4, "blastResistance": 30, "texture": [[1,24]]},
+"Andean Rock": {"id": 1, "bd": 5, "blastResistance": 30, "texture": [[1,25]]},
+"Polished andesite": {"id": 1, "bd": 6, "blastResistance": 30, "texture": [[1,26]]},
 "Grass Cube": {"id": 2, "blastResistance": 3, "texture": [[1,3], [2,12], [1,4]]},
 "Soil": {"id": 3, "blastResistance": 2.5, "texture": [[2,12]]},
-"Round stone": {"id": 4, "blastResistance": 30, "texture": [1,27]},
+"Round stone": {"id": 4, "blastResistance": 30, "texture": [[1,27]]},
 "Oak wood board": {"id": 5, "blastResistance": 15, "texture": [[2,15]]},
-"Spruce wood board": {"id": 5, "bd": 1, "blastResistance": 15, "texture": [2,16]},
-"Birch board": {"id": 5, "bd": 2, "blastResistance": 15, "texture": [2,17]},
-"Jungle Woodboard": {"id": 5, "bd": 3, "blastResistance": 15, "texture": [2,18]},
+"Spruce wood board": {"id": 5, "bd": 1, "blastResistance": 15, "texture": [[2,16]]},
+"Birch board": {"id": 5, "bd": 2, "blastResistance": 15, "texture": [[2,17]]},
+"Jungle Woodboard": {"id": 5, "bd": 3, "blastResistance": 15, "texture": [[2,18]]},
 "Golden Acacia Woodboard": {"id": 5, "bd": 4, "blastResistance": 15, "texture": [[2,19]]},
 "Dark oak wood board": {"id": 5, "bd": 5, "blastResistance": 15, "texture": [[2,20]]},
 "Oak saplings": {"id": 6, "renderType": 1, "capacity": 0, "blastResistance": 0, "texture": [[3,23]]},
@@ -90,9 +75,9 @@
 "Dark oak saplings": {"id": 6, "bd": 5, "renderType": 1, "capacity": 0, "blastResistance": 0, "texture": [[3,28]]},
 "Bedrock": {"id": 7, "blastResistance": 18000000, "texture": [[2,1]]},
 "Water": {"id": 8, "renderType": 3, "capacity": 1, "blastResistance": 500, "stackable": null, "texture": [[12,1]]},
-"Flowing water": {"id": 9, "renderType": 3, "capacity": 1, "blastResistance": 500, "stackable": null, "texture": [12,1]},
-"Lava": {"id": 10, "renderType": 3, "aperture": 14, "luminosity": 15, "maxLevel": 4, "blastResistance": 500, "stackable": null, "texture": [12,3]},
-"Flowing lava": {"id": 11, "renderType": 3, "aperture": 14, "luminosity": 15, "maxLevel": 4, "blastResistance": 500, "stackable": null, "texture": [12,3]},
+"Flowing water": {"id": 9, "renderType": 3, "capacity": 1, "blastResistance": 500, "stackable": null, "texture": [[12,1]]},
+"Lava": {"id": 10, "renderType": 3, "aperture": 14, "luminosity": 15, "maxLevel": 4, "blastResistance": 500, "stackable": null, "texture": [[12,3]]},
+"Flowing lava": {"id": 11, "renderType": 3, "aperture": 14, "luminosity": 15, "maxLevel": 4, "blastResistance": 500, "stackable": null, "texture": [[12,3]]},
 "Oak logs": {"id": 17, "texture": [[3,30], [3,29]]},
 "Spruce logs": {"id": 17, "bd": 1, "texture": [[3,32], [3,31]]},
 "Birch logs": {"id": 17, "bd": 2, "texture": [[4,2], [4,1]]},
