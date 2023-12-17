@@ -176,7 +176,7 @@ class World extends EventDispatcher {
                         let n33 = (fn3(i/256,j/256,k/256) +fn3(i/128,j/128,k/128)/2 + fn3(i/64, j/64, k/64) / 4+fn3(i/25,j/25,k/25)/8);
                         let vein = (fn3(i / 5, j / 5, k / 5) + 1) / 2;
                         tileMap[Chunk.getLinearBlockIndex(x, y, z)] =
-                            (vein < 0.18? air: n33 > 0 && n3 < -0.1? air: 石头).longID;
+                            (vein < 0.18? air: n33 > 0 && n3 < -0.1? air: stone).longID;
                     }
                     else {
                         elevations.haveSurface = elevations.haveSurface || j === elevation;
