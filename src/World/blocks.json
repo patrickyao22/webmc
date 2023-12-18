@@ -93,7 +93,8 @@
     "s13": {"id":90,"blastResistance":30,"texture":[[12,14]]},
     "TNT": {"id":91,"texture":[[2,25],[2,26],[2,24]]},
     "diamond_block": {"id":92,"texture":[[4,11]],"blastResistance":30},
-    "minecraft.block.下界反应堆.unactive": {"id":96,"texture":[[10,6]]}
+    "minecraft.block.下界反应堆.unactive": {"id":96,"luninance":5,"texture":[[10,6]]},
+    "minecraft.block.下界反应堆.active": {"id":97,"luninance":13,"texture":[[10,7]]}
 }
 }
  
