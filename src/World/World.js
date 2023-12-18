@@ -142,8 +142,8 @@ class World extends EventDispatcher {
         switch(this.type) {
         case "flat":
             let block = Block.getBlockByBlockName(chunkY >= 0? "air":
-                chunkX%2? chunkZ%2? "Grass Cube": "Stone brick"
-                : chunkZ%2? "Stone brick": "Grass Cube");
+                chunkX%2? chunkZ%2? "grass": "stone"
+                : chunkZ%2? "stone": "grass");
             for (let i = 0; i < tileMap.length; ++i)
                 tileMap[i] = block.longID;
             break;
@@ -154,11 +154,11 @@ class World extends EventDispatcher {
                 stone = Block.getBlockByBlockName(
                     chunkY%2
                     ? chunkX%2
-                        ? chunkZ%2? "Grass Cube": "Stone brick"
-                        : chunkZ%2? "Stone brick": "Grass Cube"
+                        ? chunkZ%2? "grass": "stone"
+                        : chunkZ%2? "stone": "grass"
                     : chunkX%2
-                        ? chunkZ%2? "Stone brick": "Grass Cube"
-                        : chunkZ%2? "Grass Cube": "Stone brick"
+                        ? chunkZ%2? "stone": "grass"
+                        : chunkZ%2? "grass": "stone"
                 );
             let fn3 = noise.gen3d.bind(noise);
             let elevations = [];
@@ -235,12 +235,12 @@ class World extends EventDispatcher {
                 let j = chunkY * Y_SIZE + y;
                 let flowerPlacement = treeNoise[x][z] < 0.15;
                 if (treePlacement[x][z] && j - elevation < 5 && elevations.haveSurface)
-                    tileMap[Chunk.getLinearBlockIndex(x, y, z)] = Block.getBlockByBlockName("Oak logs").longID;
+                    tileMap[Chunk.getLinearBlockIndex(x, y, z)] = Block.getBlockByBlockName("oak_log").longID;
                 else if (j - elevation < 7 && j - elevation > 3 && haveTreeAround[x][z] !== false)
-                    tileMap[Chunk.getLinearBlockIndex(x, y, z)] = Block.getBlockByBlockName("Oak leaves").longID;
+                    tileMap[Chunk.getLinearBlockIndex(x, y, z)] = Block.getBlockByBlockName("oak_leaves").longID;
                 else if (flowerPlacement && j <= elevation && y > 0 && elevations.haveSurface
                 && Block.getBlockByBlockLongID(tileMap[Chunk.getLinearBlockIndex(x, y - 1, z)]).name !== "air")
-                    tileMap[Chunk.getLinearBlockIndex(x, y, z)] = Block.getBlockByBlockName("Fluorite").longID;
+                    tileMap[Chunk.getLinearBlockIndex(x, y, z)] = Block.getBlockByBlockName("dandelion").longID;
             }
             break;}
         }
