@@ -94,7 +94,8 @@
     "TNT": {"id":91,"texture":[[2,25],[2,26],[2,24]]},
     "diamond_block": {"id":92,"texture":[[4,11]],"blastResistance":30},
     "minecraft.block.下界反应堆.unactive": {"id":96,"luminance":5,"texture":[[10,6]]},
-    "minecraft.block.下界反应堆.active": {"id":97,"luminance":13,"texture":[[10,7]]}
+    "minecraft.block.下界反应堆.active": {"id":97,"luminance":13,"texture":[[10,7]]},
+    "enchanting_table": {"id":101,"luminance":8,"blastResistance":50,"texture":[[9,11],[9,9],[9,10]]}
 }
 }
  
