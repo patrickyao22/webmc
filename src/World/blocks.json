@@ -36,10 +36,6 @@
     "fluid": [
         [0, "y0", 0], [0, "y1", 1], [1, "y2", 1], [1, "y3", 0],
         [0, 0, 1], [0, 0, 0], [1, 0, 0], [1, 0, 1]
-    ],
-    "et":[
-        [0, 0.8,0], [0, 0.8, 1], [1, 0.8, 1], [1, 0.8, 0],
-        [0, 0, 1], [0, 0, 0], [1, 0, 0], [1, 0, 1]
     ]
 },
 "blocks":{
@@ -100,7 +96,6 @@
     "diamond_block": {"id":92,"texture":[[4,11]],"blastResistance":30},
     "unactive_neither_reactor": {"id":96,"luminance":5,"texture":[[10,6]]},
     "active_neither_reactor": {"id":97,"luminance":13,"texture":[[10,7]]},
-    "enchanting_table": {"id":101,"luminance":8,"renderType":1,"blastResistance":50,"texture":[[9,11],[9,9],[9,10]]},
     "end_stone": {"id":141,"blastResistance":35,"texture":[[9,31]]},
     "red_wool": {"id":102, "blastResistance":2,"texture":[[11,6]]},
     "orange_wool": {"id":103, "blastResistance":2,"texture":[[10,25]]},
