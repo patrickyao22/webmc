@@ -96,7 +96,7 @@
     "diamond_block": {"id":92,"texture":[[4,11]],"blastResistance":30},
     "unactive_neither_reactor": {"id":96,"luminance":5,"texture":[[10,6]]},
     "active_neither_reactor": {"id":97,"luminance":13,"texture":[[10,7]]},
-    "end_stone": {"id":141,"blastResistance":35,"texture":[[9,31]]},
+    "end_stone": {"id":141,"blastResistance":35,"texture":[[8,31]]},
     "red_wool": {"id":102, "blastResistance":2,"texture":[[11,6]]},
     "orange_wool": {"id":103, "blastResistance":2,"texture":[[10,25]]},
     "green_wool": {"id":104, "blastResistance":2,"texture":[[10,29]]},
